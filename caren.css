@@ -13,7 +13,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ---------- LEFT SIDEBAR NAVIGATION (disappears on scroll) ---------- */
+/* ---------- LEFT SIDEBAR NAVIGATION ---------- */
 .side-nav {
     position: fixed;
     top: 0;
@@ -621,14 +621,14 @@ section:last-child {
     }
 }
 
-/* ---------- MOBILE STYLES (added to existing CSS) ---------- */
+/* ---------- MOBILE STYLES ---------- */
 
 /* Mobile menu button – hidden on desktop */
 .mobile-menu-toggle {
     display: none;
     position: fixed;
     top: 20px;
-    right: 20px;
+    right: 320px;
     z-index: 1100;
     background: rgba(0,0,0,0.7);
     backdrop-filter: blur(10px);
@@ -730,6 +730,10 @@ section:last-child {
         text-align: center;
         gap: 2rem;
     }
+    .footer-logo-img {
+    height: 130px;  
+    width: auto;
+}
     .footer-newsletter form {
         max-width: 280px;
         margin: 0 auto;
