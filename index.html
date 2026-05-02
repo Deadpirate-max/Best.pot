@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description"
+      content="Caren Atieno – Graphic Designer & Multidisciplinary Artist based in Nairobi, Kenya. Specialising in brand identity, illustration, and visual storytelling.">
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:title"       content="Caren Atieno – Artist & Graphic Designer">
+    <meta property="og:description"  content="Graphic designer & multidisciplinary artist crafting visual stories that resonate.">
+    <meta property="og:image"        content="images/og-preview.jpg">
+    <meta property="og:url"          content="https://your-portfolio-url.com">
+    <meta property="og:type"         content="website">
+
+    <!-- Twitter / X card -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="Caren Atieno – Artist & Graphic Designer">
+    <meta name="twitter:description"  content="Graphic designer & multidisciplinary artist crafting visual stories that resonate.">
+    <meta name="twitter:image"       content="images/og-preview.jpg">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caren Atieno – Artist & Graphic Designer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?
+        family=Abril+Fatface
+        &family=Caveat:wght@400;700
+        &family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400
+        &family=Inter:wght@300;400;500;600;700
+        &family=Pacifico
+        &display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="caren.css">
 </head>
@@ -18,6 +40,7 @@
     <i class="fas fa-bars"></i>
 </button>
 
+<div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
 <aside class="side-nav" id="sideNav">
     <button class="close-sidebar" id="closeSidebar" aria-label="Close menu">✕</button>
     <div>
@@ -47,7 +70,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero fade-in">
         <div class="hero-content">
-            <h1>Original Art & Design<br>by <span class="brand-highlight">Art Creative Studios</span></h1>
+            <h1>Original Art & Design<br>by <span class="brand-highlight">A Creative Studios</span></h1>
             <p>Graphic designer & multidisciplinary artist — crafting visual stories that resonate.</p>
             <a href="#projects" class="btn">View Portfolio</a>
         </div>
@@ -70,37 +93,129 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="fade-in">
-        <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3><i class="fas fa-pencil-ruler"></i> Design</h3>
-                    <ul>
-                        <li><span class="skill-name">Brand Identity & Logo Design</span><div class="skill-bar"><div class="skill-progress" data-width="95"></div></div></li>
-                        <li><span class="skill-name">Visual Communication</span><div class="skill-bar"><div class="skill-progress" data-width="90"></div></div></li>
-                        <li><span class="skill-name">Mixed Media Illustration</span><div class="skill-bar"><div class="skill-progress" data-width="85"></div></div></li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3><i class="fas fa-laptop-code"></i> Software</h3>
-                    <ul>
-                        <li><span class="skill-name">Adobe Photoshop</span><div class="skill-bar"><div class="skill-progress" data-width="92"></div></div></li>
-                        <li><span class="skill-name">Adobe Illustrator</span><div class="skill-bar"><div class="skill-progress" data-width="88"></div></div></li>
-                        <li><span class="skill-name">Adobe InDesign</span><div class="skill-bar"><div class="skill-progress" data-width="85"></div></div></li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3><i class="fas fa-paint-brush"></i> Creative Strengths</h3>
-                    <ul>
-                        <li><span class="skill-name">Strategic Visual Thinking</span><div class="skill-bar"><div class="skill-progress" data-width="90"></div></div></li>
-                        <li><span class="skill-name">Storytelling Approach</span><div class="skill-bar"><div class="skill-progress" data-width="87"></div></div></li>
-                        <li><span class="skill-name">Detail‑Oriented Execution</span><div class="skill-bar"><div class="skill-progress" data-width="83"></div></div></li>
-                    </ul>
-                </div>
+    <p class="preview-label">— Live Preview —</p>
+
+    <section id="skills">
+        <p class="section-eyebrow">What I bring to the table</p>
+        <h2 class="section-title">Skills & Expertise</h2>
+        <p class="section-lead">Honed through years of practice, study, and creative obsession.</p>
+
+        <div class="skills-grid">
+
+        <!-- Card 1 -->
+        <div class="skill-card">
+            <div class="skill-card-header">
+                <div class="skill-card-icon"><i class="fas fa-pencil-ruler"></i></div>
+                <span class="skill-card-title">Design</span>
             </div>
+            <ul>
+            <li>
+            <div class="skill-row">
+                <span class="skill-name">Brand Identity & Logo Design</span>
+                <span class="skill-pct">95%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Brand Identity & Logo Design: 95%">
+                <div class="skill-progress" data-width="95"></div>
+            </div>
+            </li>
+            <li>
+            <div class="skill-row">
+                <span class="skill-name">Visual Communication</span>
+                <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Visual Communication: 90%">
+                <div class="skill-progress" data-width="90"></div>
+            </div>
+                </li>
+                <li>
+            <div class="skill-row">
+                <span class="skill-name">Mixed Media Illustration</span>
+                <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Mixed Media Illustration: 85%">
+                <div class="skill-progress" data-width="85"></div>
+            </div>
+                </li>
+                </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="skill-card">
+        <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fas fa-laptop-code"></i></div>
+            <span class="skill-card-title">Software</span>
+        </div>
+        <ul>
+            <li>
+            <div class="skill-row">
+                <span class="skill-name">Adobe Photoshop</span>
+                <span class="skill-pct">92%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Adobe Photoshop: 92%">
+                <div class="skill-progress" data-width="92"></div>
+            </div>
+            </li>
+            <li>
+            <div class="skill-row">
+                <span class="skill-name">Adobe Illustrator</span>
+                <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Adobe Illustrator: 88%">
+                <div class="skill-progress" data-width="88"></div>
+            </div>
+            </li>
+            <li>
+            <div class="skill-row">
+                <span class="skill-name">Adobe InDesign</span>
+                <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Adobe InDesign: 85%">
+                <div class="skill-progress" data-width="85"></div>
+            </div>
+            </li>
+        </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="skill-card">
+        <div class="skill-card-header">
+            <div class="skill-card-icon"><i class="fas fa-paint-brush"></i></div>
+            <span class="skill-card-title">Creative Strengths</span>
+        </div>
+        <ul>
+            <li>
+            <div class="skill-row">
+                <span class="skill-name">Strategic Visual Thinking</span>
+                <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Strategic Visual Thinking: 90%">
+                <div class="skill-progress" data-width="90"></div>
+            </div>
+            </li>
+            <li>
+            <div class="skill-row">
+                <span class="skill-name">Storytelling Approach</span>
+                <span class="skill-pct">87%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" aria-label="Storytelling Approach: 87%">
+                <div class="skill-progress" data-width="87"></div>
+            </div>
+            </li>
+            <li>
+            <div class="skill-row">
+                <span class="skill-name">Detail‑Oriented Execution</span>
+                <span class="skill-pct">83%</span>
+            </div>
+            <div class="skill-bar" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" aria-label="Detail-Oriented Execution: 83%">
+                <div class="skill-progress" data-width="83"></div>
+            </div>
+            </li>
+        </ul>
+        </div>
+
         </div>
     </section>
+
 
     <!-- Resume Section -->
     <section id="resume" class="fade-in">
@@ -201,6 +316,13 @@
                         <p>Fresh juice bar identity with vibrant colors and fun branding.</p>
                         <ul class="project-tags"><li>Logo</li><li>RGB/CMYK</li></ul>
                     </div>
+                    <div class="project-link-row">
+                        <span style="font-size:0.75rem;color:#aaa;">2023</span>
+                        <a href="#" target="_blank"
+                        aria-label="View Slice and Drip project">
+                        View project &rarr;
+                        </a>
+                    </div>
                 </div>
                 <div class="project-card">
                     <img src="images/tulivu.jpg" alt="Tulivu Tours" class="project-image">
@@ -212,6 +334,13 @@
                         <p>Complete brand guide for a travel company, including logo and stationery.</p>
                         <ul class="project-tags"><li>Logo</li><li>Brand Guide</li></ul>
                     </div>
+                    <div class="project-link-row">
+                        <span style="font-size:0.75rem;color:#aaa;">2023</span>
+                        <a href="#" target="_blank"
+                        aria-label="View Slice and Drip project">
+                        View project &rarr;
+                        </a>
+                    </div>
                 </div>
                 <div class="project-card">
                     <img src="images/posters.jpg" alt="AC Studio Poster" class="project-image">
@@ -222,6 +351,13 @@
                     <div class="project-details">
                         <p>Promotional poster for AC Creative Studio's range of services.</p>
                         <ul class="project-tags"><li>Poster</li><li>A2</li></ul>
+                    </div>
+                    <div class="project-link-row">
+                        <span style="font-size:0.75rem;color:#aaa;">2023</span>
+                        <a href="#" target="_blank"
+                        aria-label="View Slice and Drip project">
+                        View project &rarr;
+                        </a>
                     </div>
                 </div>
                 <!-- Add more projects as needed -->
@@ -255,7 +391,7 @@
         <div class="footer-content">
             <div class="footer-logo">
                 <img src="images/2ef48cc3-cb99-4cc4-99f6-7ac11dfd07b8.png" alt="Art Creative Studios Logo" class="footer-logo-img">
-                <a href="#">CREATIVE<span>MIND</span></a>
+                <a href="#">CREATIVE<span>MIND</span>®</a>
             </div>
             <div class="footer-links">
                 <ul>

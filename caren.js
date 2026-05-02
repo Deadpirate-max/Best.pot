@@ -6,6 +6,28 @@
     const closeBtn = document.getElementById('closeSidebar');
 
     // ---------- Mobile Menu Toggle ----------
+    const overlay = document.getElementById('navOverlay');
+
+    function openNav() {
+        if (sideNav) {
+            sideNav.classList.add('open');
+            document.body.classList.add('sidebar-open');
+    }
+        if (overlay) overlay.classList.add('active');
+    }
+
+    function closeNav() {
+        if (sideNav) {
+            sideNav.classList.remove('open');
+            document.body.classList.remove('sidebar-open');
+        }
+        if (overlay) overlay.classList.remove('active');
+    }
+
+// Close when clicking the overlay
+if (overlay) {
+    overlay.addEventListener('click', closeNav);
+}
     function openNav() {
         if (sideNav) sideNav.classList.add('open');
     }
@@ -19,13 +41,47 @@
     if (closeBtn) {
         closeBtn.addEventListener('click', closeNav);
     }
-
+function openNav() {
+    if (sideNav) {
+        sideNav.classList.add('open');
+        document.body.classList.add('sidebar-open');
+    }
+}
+function closeNav() {
+    if (sideNav) {
+        sideNav.classList.remove('open');
+        document.body.classList.remove('sidebar-open');
+    }
+}
     // Close sidebar when a nav link is clicked (on mobile)
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             if (window.innerWidth <= 992) closeNav();
         });
     });
+    const cards = document.querySelectorAll('.skill-card');
+const bars  = document.querySelectorAll('.skill-progress');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const card = entry.target;
+    card.classList.add('visible');
+
+    // animate bars inside this card after a short delay
+    setTimeout(() => {
+      card.querySelectorAll('.skill-progress').forEach(bar => {
+        const w = bar.getAttribute('data-width');
+        if (w) bar.style.width = w + '%';
+      });
+      card.classList.add('animated');
+    }, 300);
+
+    observer.unobserve(card);
+  });
+}, { threshold: 0.15 });
+
+cards.forEach(c => observer.observe(c));
 
     // ---------- Disappearing Sidebar on Scroll (desktop only) ----------
     let previousScrollTop = 0;
